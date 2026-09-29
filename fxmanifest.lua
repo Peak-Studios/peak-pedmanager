@@ -10,7 +10,6 @@ version '1.0.0'
 ui_page 'ui/dist/index.html'
 
 shared_scripts {
-    '@oxmysql/lib/MySQL.lua',
     'shared/config.lua',
     'shared/scenarios.lua'
 }
@@ -23,6 +22,7 @@ client_scripts {
 }
 
 server_scripts {
+    '@oxmysql/lib/MySQL.lua',
     'server/bridge.lua',
     'server/main.lua'
 }
